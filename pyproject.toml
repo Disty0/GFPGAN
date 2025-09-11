@@ -1,8 +1,5 @@
 [build-system]
-requires = [
-    "basicsr", "facexlib", "lmdb", "numpy", "opencv-python", "pyyaml",
-    "scipy", "tb-nightly", "torch", "torchvision", "tqdm", "yapf", "cython"
-]
+requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 packages = ["gfpgan"]
 
@@ -20,6 +17,11 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 license = {text = "Apache-2.0"}
+
+dependencies = [
+    "basicsr", "facexlib", "lmdb", "numpy", "opencv-python", "pyyaml",
+    "scipy", "tb-nightly", "torch", "torchvision", "tqdm", "yapf", "cython"
+]
 
 [project.urls]
 Homepage = "github.com/Disty0/GFPGAN"
